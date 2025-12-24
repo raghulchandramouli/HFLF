@@ -3,13 +3,17 @@ seed : 42
 
 # Data settings
 data:
-  real_dir :
-  recon_dir :
-  swapped_dir :
+  real_dir : E:\data\ImageNet\real_imagenet
+  recon_dir : E:\data\ImageNet\recon
+  swapped_dir : E:\data\ImageNet\swapped
+  real_lf_dir : E:\data\ImageNet\real_lf
+  real_hf_dir : E:\data\ImageNet\real_hf
+  recon_lf_dir : E:\data\ImageNet\recon_lf
+  recon_hf_dir : E:\data\ImageNet\recon_hf
 
 # VAE settings for reconstruction
 vae:
-  model_name : "stability/sd-vae-ft-mse"
+  model_name : "stabilityai/sd-vae-ft-mse"
   device : "cuda"
   batch_size : 8
 
